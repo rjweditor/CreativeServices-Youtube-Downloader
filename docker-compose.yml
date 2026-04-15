@@ -1,0 +1,8 @@
+services:
+  yt-grabber:
+    build: .
+    ports:
+      - "8080:5000"
+    volumes:
+      - ./downloads:/tmp/downloads
+    restart: unless-stopped
